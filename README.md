@@ -23,3 +23,5 @@ The error occurs when the whole deploy bundle (dist + .netlify) exceeds 250mb un
 
 Should coder remove some files to go below 250mb, the deploy will succeed.
 Should coder keep the files but disable the hybrid output and remove the SSR route, the deploy will also succeed.
+
+PS: Error above occured with
