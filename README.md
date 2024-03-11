@@ -24,4 +24,8 @@ The error occurs when the whole deploy bundle (dist + .netlify) exceeds 250mb un
 Should coder remove some files to go below 250mb, the deploy will succeed.
 Should coder keep the files but disable the hybrid output and remove the SSR route, the deploy will also succeed.
 
-PS: Error above occured with
+PS: Error above occured with less files (PDFs) above the limit. This one occurs with more files (images) above the limit:
+
+```
+Deploy did not succeed with HTTP Error 400: [PUT /deploys/{deploy_id}/functions/{name}][400] uploadDeployFunction default  &{Code:400 Message:could not parse form file: http: request body too large}
+```
